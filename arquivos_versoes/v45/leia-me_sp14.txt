@@ -1,0 +1,154 @@
+Esse pacote de serviço traz correções para a versão 4.5 do i3Geo.
+As correções são cumulativas, ou seja, o último SP inclui todas
+as correções anteriores.
+
+Para instalar as correções basta copiar os arquivos existentes no SP
+sobre os arquivos existentes na sua instalação do i3Geo (faça sempre um
+backup antes!).
+
+SP1: 16/05/2011
+
+- corrige o estilo da barra de ferramentas do mashup OpenLayers
+- corrige a captura de elementos pontuais no mashup OpenLayers
+- corrige o arquivo com a lista de fontes de texto
+- inclui data de término na função inserir cookies (atual + 10 dias)
+- opção de seleção de temas na ferramenta cortina
+- novo evento para controlar a atualização dos combos com a lista de temas da árvore de camadas
+- corrige a interface minima.htm
+- corrige o tamanho da ferramenta localizarxy
+- permite adição de WMS com a versão 1.3.0 do getcapabilities
+- interface Openlayers Tablet
+- inclusão da verificação do parâmetro "allow_call_time_pass_reference" no testainstal.php
+- nova ferramenta permite abrir um memso mapa em diferentes computadores e navegadores
+- corrige a abertura da interface geral.htm
+- corrige as barras de botões e árvore de camadas na interface geral.htm
+
+SP2: 01/06/2011
+
+- corrige falha na inclusão de tema via WMS por meio do catálogo
+
+SP3: 06/06/2011
+
+- criada uma janela flutuante que agrega as ferramentas de upload de arquivos tipo SHP, DBF, CSV e GPX
+- correção no formulário de edição de links do sistema de administração
+- correção nos links de compartilhamento do Twitter e Facebook
+- nova barra de botões de edição vetorial
+- correção na opção de redimensionamento automático do mapa ao ser modificado o tamanho do navegador
+- inclusão de URL de uma imagem para compor a legenda do layer
+- corrige botão de download da ferramenta datadownload
+
+SP4: 13/06/2011
+
+- remove a mensagem "função depreciada" encontrada em algumas operações que utilizavam a função "wdocaf", como o "busca rápida"
+
+SP5: 20/06/2011
+
+- corrige a geração do texto de ajuda nos formulários do sistema de admnistração
+- exclui os metadados que permitem acesso aos dados quando o usuário faz o upload de um mapfile
+- corrige a lista de opções de um tema que não estava considerando a negativa da opção que permite ou não comentar um tema
+- permite incluir em um tema um arquivo kml ou kmz pré-produzido para ser utilizado na visualização no Google Earth
+- inclusão da ferramenta de geração de gráfico de perfil nas ferramentas de seleção e inclusão de pontos
+- inclusão de temporizador por camada
+- inclusão de opção que lista o endereço do WMS de um tema existente na árvore de camadas
+- permite o uso dos temas existentes no mapa na opção busca rápida e corrige mensagem de alerta quando o botão de zoom dessa ferramenta é acionado
+- corrige o botão de zoom por box no mashup OpenLayers
+- inclusão de opção para salvar como shapefile as geometrias criadas no editor vetorial
+- inclusão de opção botão 'trazer para frente' no editor vetorial
+- inclusão de opção para entrada de textos no editor vetorial
+
+SP6: 07/07/2011
+
+- opção de edição dos parâmetros descritivos do gerador de serviços OGC
+- corrige a ferramenta que permite alterar o tamanho do mapa (as guias não estavam funcionando corretamente após a alteração do tamanho do mapa)
+- Inclusão de opção de escolha de um tema existente no mapa para a geração dos gráficos de perfil.
+- Inclusão de opção para processamento em lote na ferramenta "filtro" da árvore de camadas.
+- Opção para criar um buffer no ponto clicado na ferramenta de identificação
+- Correção na função de download de shapefile nos casos em que a extensão dbase não estiver carregada corretamente
+- Camadas do tipo WMS agora podem ter o SLD gerado automaticamente com base nas classes definidas (desde que se use CLASSITEM). Dessa forma, a geração do SLD para definir a legenda poderá ser feito de forma mais simples.
+- Arquivos KML agora podem ser incluídos na interface Openlayers. Antes apenas era possível nas interfaces GoogleMaps e GoogleEarth.
+- Inclui a abertura da ferramenta GoogleMaps quando a ferramenta perfil utiliza o Web Service do Google.
+
+SP7: 20/07/2011
+
+- adição de uma guia na ferramenta "tabela" com as propriedades da lista de registros
+- nova barra de botões do tipo "olho de peixe"
+- correção ao salvar mapfile diretamente da árvore de camadas para remover metadados não necessários (apenas para editores)
+- correção na montagem da lista de mapfiles no editor de atlas (apenas editores) para sempre refazer a lista de mapfiles
+- Corrige a ordenação das camadas ao ligar/desligar na interface googlemaps
+- Corrige opção de escolha interativa de cor na ferramenta "gráfico" em propriedades do tema
+- Inclusão de opção opção para testar camada no editor de atlas do sistema de administração
+- Modificação no comportamento dos botões que adicionam elementos nos editores de atlas, mapfiles e árvore de temas. Ao adicionar, o formulário de edição agora é aberto automaticamente.
+- Correção do programa geraminiatura.php (não estava funcionando em algumas instalações do i3Geo)
+- Correção no funcionamento da árvore de camadas quando aão utilizados grupos (interface Google Maps)
+
+SP8: 10/08/2011
+
+Obs: veja as novas interfaces que usam a guia retrátil em i3geo/interface
+
+- Inclusão de ícone na barra de ferramentas que permite abrir o editor vetorial
+- Correção nas cores de fundo das guias das janelas das ferramentas
+- Novos ícones Gisicons
+- Correção nas cores das feições inseridas no mapa após a edição ter sido realizada (editor vetorial)
+- Correção no estilo das guias das ferramentas
+- Correção na geração de KML quando o nome do LAYER for diferente do nome do mapfile
+- Inclusão do valor do ID na árvore de temas mostrada no sistema de admnistração
+- Corrige a geração de KML quando determinados campos do banco de admnistração conterem valores nulos
+- Corrige o download de temas quando o nome do mapfile é diferente do nome do layer
+- Correção na obtenção de itens da tabela de atributos com mais de 10 caracteres e conversão para shapefile nas ferramentas de análise
+- Incluido um mostrador de número de elementos selecionados na ferramenta de seleção
+- Mudanças para funcionamento com register_globals = On no PHP.INI
+- Correção na gravação dos nomes dos menus no sistema de administração quando são utilizados caracteres acentuados
+- Inclusão do item "Ferramentas" no menu suspenso e combo para escolha do layer em algumas ferramentas
+- Inclui cabeçalho em kml.php que pérmite abrir o xml diretamente no Google Earth
+- Inclusão de opção no editor de legenda que permite alterar a ordem das classes
+- Inclusão de ferramenta que permite definir a opacidade de todas as camadas do mapa
+- Correção na ferramenta de identificação do mashup OpenLayers. Não estava sendo aceita a opção de alterar o tema ativo.
+- Inclusão da legenda em uma janela flutuante no mashup OpenLayers
+- Alteração nos estilos quando @media for para impressão, escondendo elementos da interface OpenLayers quando se tenta imprimir o mapa diretamente do navegador
+
+SP9: 29/08/2011
+- Nova ferramenta permite upload de KML para criação de um layer no mapfile
+- Inclusão de opção para criação de camada com conexão GeoJson
+- Agrupamento das opções de conexão com serviços em uma única janela
+- Permissão para edição da legenda de temas do tipo gráfico
+- Inclusão da linha de início <?php em "phpxbase"
+- Inclusão do módulo "progressbar" no YUI. Inclusão de barra de progresso que mostra o status do desenho das camadas na interface OpenLayers
+- Opção para cortar figuras no editor vetorial
+- Ferramenta animação de layers (liga e desliga temporizado)
+- Nova opção permite filtrar a lista de mapfiles no editor de mapfiles.
+- Removida a opção "undo" do editor vetorial, que não estava funcionando corretamente.
+- Nova opção permite ver as geometrias existentes no editor vetorial na forma de uma lista.
+- Correções nos formulários do sistema de administração e melhoria dos textos explicativos.
+
+SP10: 02/09/2011
+- Adicionado o parâmetro mapext no masgup openlayers para oferecer zoom em uma região
+- Corrige a ferramenta identifica quando se usa WMS
+
+SP11: 27/09/2011
+- Corrige a opção de ligar e desligar temas quando é feita a troca de interface para o GoogelMaps
+- Corrige a função de identificação em layers do tipo MS_OGR
+- Incluí ícone para acesso ao editor vetorial
+
+SP12: 6/10/2011
+- Correção no cálculo de DPI na interface OpenLayers para correção no cálculo de escala
+- Compactação dos códigos do mashup OpenLayers
+- Inclusão da opção format=application/openlayers no gerador de serviços WMS
+- Corrige a apresentação da opção de navegação em pastas locais na árvore de temas
+- Melhora na interface dos formulários do sistema de administração
+- Corrige a abertura da ferramenta legenda em temas raster
+- Corrige a edição de geometrias no mashup OpenLayers
+
+SP13: 17/10/2011
+- Correção no estilo do mashup OpenLayers
+- Novo parâmetro para inclusão ou não do layer gráfico no mashup OpenLayers
+- Incluída opção para inicialização do "layerswitcher" já aberto no mashup OpenLayers
+- Aprimoramento da compactação dos códigos javascript
+
+SP14: 09/11/2011
+- Adicionada mensagem de "concluído" na ferramenta "salvar mapfile"
+- Opção para testar um atlas diretamente no editor (sistema de administração)
+- Opção para abrir um mapfile no i3Geo diretamente do editor de textos existente no editor de mapfiles (sistema de administração)
+- Melhorias no estilo da página do editor de mapfiles.
+- Correção na função de rmeoção de acentos em classesjs/funcoes_gerais.php
+- Inclusão de parâmetro para controlar a visibilidade dos temas no mashups/openlayers.php
+- correção na geração de gráficos com o R
